@@ -1,0 +1,633 @@
+body {
+    margin: 0;
+    background: #09080A;
+    color: white;
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header {
+    background: url("C:/Users/pc/Desktop/siddhiweb/images/4xx.png");
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 330px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+.nav-links {
+    width: 600px;
+    height: 24px;
+    top: 58px;
+    left: 656px;
+    gap: 50px;
+    opacity: 1;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    width: 80px;
+}
+
+.btn-primary {
+    width: 160px;
+    height: 54;
+    gap: 30px;
+    opacity: 1;
+    border-radius: 100px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    background-color: #0F1418;
+    color: white;
+    border: none;
+
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.hero h1 {
+    background: linear-gradient(177.4deg rgba(255, 255, 255, 0.3) 86.35%);
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.hero p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.cta-buttons {
+    position: relative;
+}
+
+.cta-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+
+}
+
+.btn-secondary {
+    background-color: #5b7cff;
+
+    border: none;
+    color: white;
+
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.arrow-icon img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.horizontal-scroll {
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.scroll-track {
+    display: inline-flex;
+    animation: Hscroll 18s linear infinite;
+}
+
+.scroll-items {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-items li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin: 0 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.scroll-items li i {
+    font-size: 22px;
+    color: #ffd54a;
+}
+
+@keyframes Hscroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.scroll-track::after {
+    content: attr(data-duplicate);
+    display: inline-block;
+}
+
+
+.work-section {
+    display: flex;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.work-section h3 {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.work-section ul li {
+    line-height: 30px;
+}
+
+.about-section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about-section h3 {
+    font-size: 37px;
+}
+
+.about-section p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.img-flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.image-container {
+    position: relative;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.image-container:hover {
+    box-shadow: #ffffff 0px 0px 20px 2px;
+    transition: 1.5s;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text overlay */
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.085);
+    /* optional: semi-transparent background */
+    padding: 20px;
+
+}
+
+
+.overlay-text h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.overlay-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.client {
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #0f1418;
+    padding: 30px 20px;
+}
+
+.client-flex {
+    display: flex;
+    justify-self: center;
+}
+
+
+.client-service {
+    background: url('https://www.transparenttextures.com/patterns/cartographer.png') repeat;
+    text-align: center;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #1976d2;
+}
+
+.scroll-box {
+    width: 280px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+
+.scroll-track {
+    display: flex;
+    flex-direction: column;
+    animation: scrollDown 3s linear infinite;
+}
+
+.scroll-item {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    padding: 18px 25px;
+    transition: all 0.3s ease;
+}
+
+.scroll-item.active {
+    color: #ffa726;
+    font-weight: 600;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40%);
+    }
+
+}
+
+
+
+.Build {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Build-flex {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.Build-flex p {
+    font-size: 16px;
+}
+
+.footer-section {
+    border-top: 1px solid #ccc;
+    width: 1000px;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.f2 li {
+    cursor: pointer;
+    list-style: none;
+    line-height: 30px;
+}
+
+.foot-inn h3 {
+    font-size: 30px;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 320px;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+
+.quote-box {
+    display: none;
+}
+
+
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 30px 0;
+}
+
+.scroll-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+    animation: scroll 12s linear infinite;
+}
+
+.item {
+    color: #cfd3e2;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.95;
+    padding: 8px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(6px);
+}
+
+/* Infinity animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+
+        font-size: 15px;
+    }
+
+    .cta-buttons button {
+        margin: 10px 0;
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 30%;
+        border-radius: 50px 50px;
+    }
+
+    .btn-outline {
+        display: none;
+    }
+
+    .work-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .img-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Build-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .end-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .scroll-items li {
+        font-size: 18px;
+    }
+
+    .work2 {
+        display: none;
+    }
+
+    .about-section h3 {
+        font-size: 18px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+        text-align: left;
+        padding: 5px;
+        margin-left: 15px;
+        line-height: 20px;
+    }
+
+    .image-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .img-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .quote-box {
+        width: 320px;
+        background: #121027;
+        border: 1px solid #3e3e77;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(66, 66, 150, 0.4);
+        margin: auto;
+        display: block;
+    }
+
+
+
+    .quote-box h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .quote-box p {
+        font-size: 13px;
+        color: #bbb;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 10px 12px;
+        background: transparent;
+        border: 1px solid #555;
+        border-radius: 6px;
+        color: white;
+        font-size: 14px;
+        outline: none;
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border-color: #6c63ff;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #5b5cff;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    button:hover {
+        background: #4445ff;
+    }
+
+
+
+    header {
+        height: 150px;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .foot li {
+        list-style-type: none;
+        font-size: 20px;
+    }
+}
